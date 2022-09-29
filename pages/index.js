@@ -5,7 +5,7 @@ export default function Home() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https//jsonplaceholder.typicode.com/comments')
+    fetch('https://jsonplaceholder.typicode.com/comments')
       .then((res) => res.json())
       .then((data) => setUsers(data));
   }, []);
