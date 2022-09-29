@@ -24,7 +24,7 @@ export default function Comments(props){
 }
 
 export async function getServerSideProps(context) {
-    const res = await fetch('http://jsonplaceholder.typicode.com/comments')
+    const res = await fetch('https://jsonplaceholder.typicode.com/comments')
     const comments = await res.json()
     return {
         props: {
